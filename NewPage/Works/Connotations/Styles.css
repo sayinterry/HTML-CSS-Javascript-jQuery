@@ -1,0 +1,57 @@
+body {
+	background: url(http://www.digitalrevolutions.biz/works/cool_1600.jpg) center;
+}
+
+#Title {
+	Font-size: 100px;
+	text-align: center;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+	text-align: center;
+}
+
+#Family {
+	font-size: 60px;
+	color: pink;
+	font-style: bold;
+	font-family: 'Calligraffitti', cursive;
+}
+
+#Prison {
+	font-size: 60px;
+	color: grey;
+	font-family: 'Black Ops One', cursive;
+}
+
+#Government {
+	font-size: 60px;
+	font-family: 'UnifrakturCook', cursive;
+}
+
+#School {
+	font-size: 60px;
+	Color: yellow;
+	font-family: 'Permanent Marker', cursive;
+}
+
+#Friends {
+	font-size: 60px;
+	Color: #006400;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+#Brick {
+	font-size: 60px;
+	color: red;
+	font-family: 'Monofett', cursive;
+}
+
+.MenuTitle{
+	font-size: 60px;
+	color: red;
+	font: bold;
+	text-decoration:underline;
+}

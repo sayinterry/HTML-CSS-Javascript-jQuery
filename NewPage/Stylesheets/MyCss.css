@@ -1,0 +1,147 @@
+* {
+	list-style: none;
+}
+
+body {
+	background: #0ecc00 url(Images/bg.jpg) repeat-x scroll;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+#wrapper {
+	width: 75%;
+	min-width: 850px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#banner {
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-radius-topleft: 10px;
+	-webkit-border-radius-topright: 10px;
+	background: -moz-linear-gradient(top, #13c50f 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#13c50f), to(#ffffff));
+	background: -o-gradient(#13c50f , #ffffff);
+	height: 160px;
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+}
+
+div#logo a {
+	-moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+	background-image: url("Images/logo.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: transparent;
+	background-attachment: scroll;
+	display: block;
+	width: 380px;
+	height: 150px;
+	position: absolute;
+}
+
+div#logo a span {
+	display: none;
+}
+
+a#no {
+	padding: 0;
+}
+
+div#head a, div#logo a {
+	padding: 0;
+}
+
+div#head {
+	float: left;
+	position: absolute;
+	right: 30px;
+	top: 70px;
+	height: 61px;
+	width: 144px;
+}
+
+iframe {
+	width: 95%;
+	height: 95%;
+}
+
+#dialog {
+	overflow-y: hidden;
+}
+
+span.title {
+	font-size: 2.2em;
+}
+
+span.small {
+	font-size: 1em;
+}
+
+#content {
+	background-color: white;
+}
+
+ul {
+	margin: 0;
+}
+
+li {
+	float: left;
+	max-width: 128px;
+	font-size: 0.82em;
+	font-weight: 400;
+}
+
+div {
+	font-size: 0.95em;
+	font-weight: 600;
+}
+
+#tabs {
+	width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	float: none;
+	padding: 0.2em 1em;
+}
+
+a {
+	padding: 0.2em 1em;
+}
+
+.beforeme {
+	font-size: 0.75em;
+}
+
+h1 {
+	margin: 0.2em 0;
+	text-align: center;
+}
+
+div.footer {
+	height: 20px;
+	background: -moz-linear-gradient(top, #ffffff 0%, #13c50f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#13c50f));
+	background: -o-gradient(#ffffff , #13c50f);
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-radius-bottomleft: 10px;
+	-webkit-border-radius-bottomright: 10px;
+}
+
+div.footer {
+	padding: 10px 0;
+	font-size: 0.7em;
+	font-weight: 400;
+}

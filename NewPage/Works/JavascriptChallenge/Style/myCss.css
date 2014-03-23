@@ -1,0 +1,13 @@
+* {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	background-color: lightblue;
+	font-size: 0.7em;
+}
+
+#content {
+	width: 600px;
+}

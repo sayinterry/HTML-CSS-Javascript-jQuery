@@ -1,0 +1,50 @@
+<HTML>
+<TITLE>
+Lab 3
+</TITLE>
+
+<HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+function lab3()
+{
+	word = MyForm.wordbox.value
+    if (word == "GOAT" || word == "goat") {
+		window.open ("goat.html");
+	} else if (word == "DOG" || word == "dog") {
+		window.open("dog.html");
+	} else {
+		alert("AHHHH YOU DID IT WRONG!!!!!");
+	}
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1> Lab Task 3 </H1>
+<HR>
+<P>
+In this lab task, we are going to see how a computer program can make decisions. Depending on the word you type in the box, a different picture will appear. Type GOAT (or goat) and a goat will appear, type DOG (or dog) and a dog should appear. Type in anything else and a warning should pop up.
+</P>
+<P>
+(Images courtesy of the <A HREF ="http://www.tsl.state.tx.us/ld/projects/trc/2002/manual/clipart/clipart.html">Texas State Libraries and Archives Commission</A>
+)
+</P>
+
+<FORM ID = "MyForm" METHOD = "submit" ACTION="someAction.cgi">
+<INPUT TYPE = "text" NAME = "wordbox"><BR/>
+<INPUT TYPE = "button" NAME = "button1" VALUE = "Click Me To Continue" onclick = "lab3()"/>
+
+</FORM>
+
+<P>
+As you look at the code, you might find <a href="http://www.w3schools.com/JS/js_if_else.asp">this reference</a> helpful.
+</P>
+
+<h1> STUDENT's EDIT </h1>
+<p> I did the task. And also i added the ability to type 'dog', and 'goat' in lower case. Anything else will make a warning appear.</p>
+
+
+</BODY>
+
+</HTML>

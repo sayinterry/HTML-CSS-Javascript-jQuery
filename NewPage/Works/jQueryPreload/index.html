@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Image Swap</title>
+<link rel="stylesheet" href="Stylesheets/MyCss.css" />
+<!--[if lt IE 9]>
+<script src="../../Javascripts/html5.js"></script>
+<![endif]-->
+<script src="../../Javascripts/jQuery.js"></script>
+<script>
+var image1 = $("<img />").attr("src", "Stylesheets/Images/UMadBro.png");
+var image2 = $("<img />").attr("src", "Stylesheets/Images/Free Cookies!.jpg");
+
+$(document).ready(function(){
+	image2.appendTo("#wrapper");
+});
+
+function swap() {
+	$("img").remove();
+	image1.appendTo("#wrapper");
+}
+function swap2() {
+	$("img").remove();
+	image2.appendTo("#wrapper");
+}
+
+</script>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="wrapper" onMouseOver="swap()" onMouseOut="swap2()">
+	</div>
+</div>
+
+<div id="background">
+	<p>
+		Hello! I am going to explain how this works. So, in my html, I have a script tag, located within the head, that contains two functions within it. One is swap1() and the other is swap2(). Swap1() tells the document to switch the source of my image to my second image's source while swap2() tells the document to switch my current source to my first image's source. This is done by the line of code, " document.hi.src="(image source here)" ". The line of code tells the document to change hi's, the img tag's name, source to whichever image I wish. In my html, I named my img tag, hi. It is needed for the javascript to locate the correct img that needs it's source changed. The image itself is contained inside a div tag which has events embedded into the tag where if the mouse moves over the div, the image will change it source by calling the function, 'swap1()', and when the mouse is taken off, it would call the function, 'swap2'. To make sure there were not any weird image swaps, I made the image size a uniform size by editing the img tag in the css and by setting a width and height value.
+	</p>
+</div>
+	
+<footer>
+  <div class="footer" align="center">&#169; 2011 Terry Cho</div>
+</footer>
+
+</body>
+
+</html>

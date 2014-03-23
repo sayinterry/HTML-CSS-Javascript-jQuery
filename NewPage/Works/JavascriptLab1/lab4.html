@@ -1,0 +1,44 @@
+<HTML>
+<TITLE>
+Lab 4
+</TITLE>
+
+<HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+
+function lab4(website)
+{
+	var mypage = website.options[website.selectedIndex].value;
+	
+	if (website.options[website.selectedIndex].value != "") {
+		window.open(mypage);
+	}
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1> Lab Task 4 </H1>
+<HR>
+<P>
+In this lab task, we are going to build on some of the things we learned before. If you look down the page you will see that the text input box has been replaced with a selection box.<P>
+You are going to make it show a list of your top search engines. When you select one from the list, a new web browser should open with your Web site loaded into it.
+</P>
+
+<FORM ID = "MyForm" METHOD = "submit" ACTION="">
+
+<SELECT NAME="searchengine" onChange="lab4(this.form.searchengine)">
+	<OPTION VALUE="">Choose a search engine</OPTION>
+	<OPTION VALUE="http://www.google.com">Google</OPTION>
+	<OPTION VALUE="http://www.yahoo.com">Yahoo</OPTION>
+	<OPTION VALUE="http://www.bing.com/">Bing!</OPTION>
+			
+</SELECT>
+
+</FORM>
+<p>My edit here was that I made the form go to the website and added Bing!</p>
+
+</BODY>
+
+</HTML>

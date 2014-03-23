@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Template</title>
+<link rel="stylesheet" href="Stylesheets/MyCss.css" />
+<!--[if lt IE 9]>
+<script src="../../Javascripts/html5.js"></script>
+<![endif]-->
+<script src="../../Javascripts/jQuery.js"></script>
+
+</head>
+
+<body>
+
+<button value="1" type="submit">2008-2009 Quiz Results</button>
+<button value="2" type="submit">2009-2010 Quiz Results</button>
+<button value="3" type="submit">2010-2011 Quiz Results</button>
+<button value="4" type="submit">2011-2012 Quiz Results</button>
+<br />
+
+<script>
+$(document).ready(function() {
+	var toggled = false;
+	var current;
+	$("button").click(function (event) {
+		if (toggled == true) {
+			$("#Oeight").hide(1000);
+			$("#Onine").hide(1000);
+			$("#Oten").hide(1000);
+			$("#Oeleven").hide(1000);
+		}
+		if ($(this).val() == 1 && $(this).val() != current) {
+			$("#Oeight").toggle("slow");
+			toggled = true;
+			current = $(this).val();
+		} else if ($(this).val() == 2 && $(this).val() != current) {
+			$("#Onine").toggle("slow");
+			toggled = true;
+			current = $(this).val();
+		} else if ($(this).val() == 3 && $(this).val() != current) {
+			$("#Oten").toggle("slow");
+			toggled = true;
+			current = $(this).val();
+		} else if ($(this).val() == 4 && $(this).val() != current) {
+			$("#Oeleven").toggle("slow");
+			toggled = true;
+			current = $(this).val();
+		} else {
+			current = null;
+		}
+	})
+})
+</script>
+<div id="Oeight">
+	<img src="Stylesheets/Images/Design_Challenge/08-09-quiz1.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/08-09-quiz2.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/08-09-quiz3.jpg" />
+</div>
+<div id="Onine">
+	<img src="Stylesheets/Images/Design_Challenge/09-10-quiz1.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/09-10-quiz2.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/09-10-quiz3.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/09-10-quiz4.jpg" />
+</div>
+<div id="Oten">
+	<img src="Stylesheets/Images/Design_Challenge/10-11-quiz1.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/10-11-quiz2.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/10-11-quiz3.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/10-11-quiz4.jpg" />
+</div>
+<div id="Oeleven">
+	<img src="Stylesheets/Images/Design_Challenge/11-12-quiz1.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/11-12-quiz2.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/11-12-quiz3.jpg" />
+	<img src="Stylesheets/Images/Design_Challenge/11-12-quiz4.jpg" />
+</div>
+
+<footer>
+  <div class="footer" align="center">&#169; 2011 Terry Cho</div>
+</footer>
+
+</body>
+
+</html>

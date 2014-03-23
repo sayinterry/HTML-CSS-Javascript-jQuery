@@ -1,0 +1,25 @@
+body {
+	font-size: 24px;
+	color: teal;
+	background: #2c2721 url(http://freeyourdesign.com/images/fade/img/bg3.gif) repeat-x;
+}
+
+h1 {
+	font-size: 28px;
+	color: red;
+}
+
+h2 {
+	font-size: 28px;
+	color: blue;
+}
+
+h3 {
+	font-size: 28px;
+	color: purple;
+}
+
+h4 {
+	font-size: 28px;
+	color: red;
+}

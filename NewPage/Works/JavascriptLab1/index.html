@@ -1,0 +1,57 @@
+<HTML>
+
+<HEAD>
+<TITLE>
+AoIT Javascript Labs
+</TITLE>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+function lab1() {
+	alert ("Hi! This is our first Javascript Lab. Easy, right? Change this so it asks for your name and greets you with an alert.");
+	var name = prompt("Please enter your name","");
+	if (name != null && name != "") {
+		alert("Hello " + name + "! I am enjoying Javascript, Are you?");
+	}
+}
+
+function lab2() {
+	window.open ("lab2.html");
+}
+
+function lab3() {
+	window.open("lab3.html");
+}
+
+function lab4() {
+	window.open("lab4.html");
+}
+
+function lab5() {
+	window.open("lab5.html");
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1>AoIT at Galileo: Javascript Labs</H1>
+<HR>
+Hi there! Welcome to this introduction to the <B>Amazing World of Programming</B> (in JavaScript)!
+</hr>
+<P>
+Click on the buttons below to get started.
+Remember! If you have any problems, try looking at the source code.
+</P>
+
+<FORM ID = "MyForm" METHOD = "submit" ACTION="someAction.cgi">
+<INPUT TYPE = "button" NAME = "button1" VALUE = "Click Me for Lab Task 1" onclick = "lab1()"/>
+</br>
+<INPUT TYPE = "button" NAME = "button2" VALUE = "Click Me for Lab Task 2" onclick = "lab2()"/>
+</br>
+<INPUT TYPE = "button" NAME = "button3" VALUE = "Click Me for Lab Task 3" onclick = "lab3()"/>
+</br>
+<INPUT TYPE = "button" NAME = "button4" VALUE = "Click Me for Lab Task 4" onclick = "lab4()"/>
+</br>
+<INPUT TYPE = "button" NAME = "button5" VALUE = "Click Me for Lab Task 5" onclick = "lab5()"/>	
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,46 @@
+<HTML>
+
+<HEAD>
+<TITLE>
+Lab 2
+</TITLE>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+function lab2() {
+	i = 1;
+	name = MyForm.namebox.value
+	document.write("First Example");
+	document.write("<br />");
+	document.write("Hi there " + name);
+	document.write("<br /><br /><br /><br />");
+	document.write("My Edit.");
+	document.write("<br />");
+	while (i < 11) {
+		document.write(i + ". Hi there " + name)
+		document.write("<br />")
+		i++;
+	}
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1> Lab Task 2 </H1>
+<HR>
+In this lab task, we are going to do some clever penguin stuff. You'll type your name in the box, click the button and get JavaScript to say hello to you on the page (not in an alert) <strong>ten times.</strong><P>
+At the moment, your name just gets printed once.  (Try it and see.)  Can you figure out how to make it print 10 times?
+<P>
+
+<FORM ID = "MyForm" METHOD = "submit" ACTION="someAction.cgi">
+<INPUT TYPE = "text" NAME = "namebox">
+<P>
+
+<INPUT TYPE = "button" NAME = "button1" VALUE = "Click Me To Continue" onclick = "lab2()"/>
+
+</FORM>
+<P>
+Once you have it working, <a href="http://www.w3schools.com/JS/tryit.asp?filename=tryjs_fornext">read this</a> and see if you can improve your code.
+</P>
+</BODY>
+
+</HTML>

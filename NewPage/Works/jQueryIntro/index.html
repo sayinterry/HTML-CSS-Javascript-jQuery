@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Template</title>
+<link rel="stylesheet" href="Stylesheets/MyCss.css" />
+<!--[if lt IE 9]>
+<script src="../../Javascripts/html5.js"></script>
+<![endif]-->
+<script src="../../Javascripts/jQuery.js"></script>
+</head>
+
+<body>
+
+<img id="bg" src="Stylesheets/Images/background.jpg" alt="background image" />
+
+<div id="content">
+	<div id="body">
+		<button id="fade" type="button">Click me to fade me!</button>
+		<button id="showFade" type="button">Click me to show the fade button!</button>
+		<br />
+		<script>
+			$(document).ready(function(){
+				$("#fade").click(function(event){
+					$(this).fadeOut("slow");
+				});
+				$("#showFade").click(function(event){
+					$("#fade").fadeIn("slow");
+				});
+			});
+		</script>
+	</div>
+	
+	<footer>
+	  <div class="footer">&#169; 2011 Terry Cho</div>
+	</footer>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+body {
+	background: orange no-repeat fixed;
+	overflow: hidden;
+}
+
+#content {
+	margin-left: 200px;
+}
+
+#bg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+#body {
+	margin-top: 100px;
+}
+
+img {
+	background-color: white;
+}
+
+div.footer {
+	font-size: 0.7em;
+	margin-top: 2em;
+	bottom: 0;
+}

@@ -1,0 +1,14 @@
+* {
+    float: none;
+    list-style: none outside none;
+    text-decoration: none;
+}
+
+body {
+	background: white no-repeat scroll;
+}
+
+div.footer {
+	margin-top: 2em;
+	font-size: 0.7em;
+}

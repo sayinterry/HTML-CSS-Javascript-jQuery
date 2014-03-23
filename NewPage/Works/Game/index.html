@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Template</title>
+<link rel="stylesheet" href="Stylesheets/MyCss.css" />
+<!--[if lt IE 9]>
+<script src="../../Javascripts/html5.js"></script>
+<![endif]-->
+<script src="../../Javascripts/jQuery.js"></script>
+</head>
+
+<body>
+	
+<div id="wrapping">
+	<div id="banner">
+	</div>
+	<div id="content">
+		<div id="game">
+			<div id="begin"></div>
+		</div>
+		<button id="choosegame1" type="button">Begin</button>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var game = $("<script />").attr("src", "Javascripts/Javascript.js");
+	$("button").click(function() {
+		$("head").append(game);
+		$("#choosegame1").remove();
+	});
+</script>
+
+<footer>
+  <div class="footer" align="center">&#169; 2011 Terry Cho</div>
+</footer>
+
+</body>
+
+</html>

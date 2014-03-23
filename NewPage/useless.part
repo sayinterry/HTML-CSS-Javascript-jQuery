@@ -1,0 +1,8 @@
+<button id="lameo" type="button">Click me</button>
+<script id="lameo" type="text/javascript">
+	$("button").click(function() {
+		$("#lameo").fadeOut(2000, function() {
+			$("#useless").remove();
+		});
+	});
+</script>

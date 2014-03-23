@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Plug-in Introduction</title>
+<link rel="stylesheet" href="Stylesheets/MyCss.css" />
+<!--[if lt IE 9]>
+<script src="../../Javascripts/html5.js"></script>
+<![endif]-->
+<script src="../../Javascripts/jQuery.js"></script>
+<script src="Javascripts/jquery.gchart.js"></script>
+<script type="text/javascript">
+$(function () {
+	$("#graph").gchart({
+		type: 'line', 
+			maxValue: 40,
+		title: 'Number of Text Messages from Best Friend', 
+			titleColor: 'blue',
+		backgroundColor: "white",
+		series: [$.gchart.series('# of Texts', [206, 121, 251, 894, 154, 158, 204, 253], 'teal', 0, 1000)],
+		axes: [$.gchart.axis('bottom', ["Jan 1", "Jan 2", "Jan 3", "J. 4 - Bday", "Jan 5", "Jan 6", "Jan 7", "Jan 8"], 'red'),
+		$.gchart.axis('left', 0, 1000, 'purple', 'right'),
+		$.gchart.axis('left', ['# of Texts'], [50], 'purple', 'right')],
+		legend: 'right'});
+});
+</script>
+</head>
+
+<body>
+
+<div id="content">
+<h1>Graph of Number of Texts from Best Friend from January 1st to January 8th.</h1>
+<div id="graph"></div>
+</div>
+
+<footer>
+  <div class="footer" align="center">&#169; 2011 Terry Cho</div>
+</footer>
+
+</body>
+
+</html>

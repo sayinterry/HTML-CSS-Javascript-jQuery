@@ -1,0 +1,73 @@
+<HTML>
+<TITLE>
+Lab 5
+</TITLE>
+
+<HEAD>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+function lab5 (country)
+{
+	countryid = country
+	if (countryid == 1) {
+		MyForm.namebox.value = "United Kingdom";
+	} else if (countryid == 2) {
+		MyForm.namebox.value = "United States";
+	} else if (countryid == 3) {
+		MyForm.namebox.value = "Canada";
+	} else if (countryid == 4) {
+		MyForm.namebox.value = "Australia";
+	} else if (countryid == 5) {
+		MyForm.namebox.value = "New Zealand";
+	}
+}
+
+function newsite (flagid)
+{
+	if (flagid == 1) {
+		window.open ("http://www.google.co.uk");
+	} else if (flagid == 2) {
+		window.open ("http://www.google.com");
+	} else if (flagid == 3) {
+		window.open ("http://www.google.ca");
+	} else if (flagid == 4) {
+		window.open ("http://www.google.com.au");
+	} else if (flagid == 5) {
+		window.open ("http://www.google.co.nz");
+	}
+}
+
+function textboxclear ()
+{
+	MyForm.namebox.value = "";
+}
+	
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1> Lab Task 5</H1>
+<HR>
+<H3>How well do you know these flags?</H3>
+<P>
+In this final lab task, we are going to use some of the more fun features of JavaScript. When you move your mouse over one of the pictures below, a different message should appear in the text box. When you click on the picture, it should take you to the Google Web site for that country.
+</P>
+<P>
+Can you fix the lab5 and newsite functions so they work as intended? Once you do that, also add some Javascript so that the text box is cleared when you move the mouse off the images.
+</P>
+<CENTER>
+<IMG SRC = "uk.gif" onMouseover = "lab5(1)" onclick = "newsite(1)" onMouseOut = "textboxclear()">
+<IMG SRC = "us.gif" onMouseover = "lab5(2)" onclick = "newsite(2)" onMouseOut = "textboxclear()">
+<IMG SRC = "ca.gif" onMouseover = "lab5(3)" onclick = "newsite(3)" onMouseOut = "textboxclear()">
+<IMG SRC = "au.gif" onMouseover = "lab5(4)" onclick = "newsite(4)" onMouseOut = "textboxclear()">
+<IMG SRC = "nz.gif" onMouseover = "lab5(5)" onclick = "newsite(5)" onMouseOut = "textboxclear()">
+<CENTER>
+<P>
+<FORM ID = "MyForm" METHOD = "submit" ACTION="">
+<INPUT TYPE = "text" NAME = "namebox" SIZE = 25>
+</FORM>
+</br>
+</br>
+<p>I did everything the lab asked for.</p>
+</BODY>
+
+</HTML>

@@ -1,0 +1,48 @@
+* {
+    float: none;
+    list-style: none outside none;
+    text-decoration: none;
+}
+
+body {
+	background: white;
+}
+
+#content {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#click {
+	margin: 10px 10px;
+	text-align: center;
+	background-color: lightblue;
+	width: 100px;
+	height: 20px;
+}
+
+#box {
+	position: absolute;
+	background-color: black;
+	width: 120px;
+	height: 40px;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+#show {
+	display: none;
+}
+
+div.footer {
+	margin-top: 2em;
+	font-size: 0.7em;
+}
+
+#explain {
+	display: none;
+	margin-top: 100px;
+	font-size: 1.2em;
+	width: 500px;
+	margin-left: 50px;
+}
